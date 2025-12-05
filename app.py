@@ -100,6 +100,19 @@ def set_custom_style():
             color: #6b7280;
             font-size: 0.98rem;
         }
+
+        /* --- FIX PARA MODO OSCURO --- */
+        @media (prefers-color-scheme: dark) {
+            .main-title h1 {
+                /* Cambiamos a Blanco -> Azul Claro para que resalte sobre negro */
+                background: linear-gradient(90deg, #f8fafc, #60a5fa);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            .main-title p {
+                color: #cbd5e1; /* Subtítulo más claro */
+            }
+        }
         </style>
         """,
         unsafe_allow_html=True,
