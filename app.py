@@ -57,6 +57,14 @@ def set_custom_style():
         [data-testid="stSidebar"] hr {
             border-color: #1f2937;
         }
+        
+        /* Flecha para contraer/expandir sidebar en blanco */
+        [data-testid="stSidebarCollapseButton"] > button {
+            color: #ffffff !important;
+        }
+        [data-testid="stSidebarCollapseButton"] > button:hover {
+            color: #60a5fa !important; /* Azul claro al pasar el mouse */
+        }
 
         /* Tarjetas KPI */
         .kpi-card {
